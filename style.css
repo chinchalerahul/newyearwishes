@@ -1,0 +1,102 @@
+body{
+	font-size:12px;
+	font-family:arial;
+	font-weight:normal;
+	margin:0 auto;
+	background:#000;
+}
+#page{
+	border:5px solid #7DCEE3;
+	width:960px;
+	margin:20px auto 0;
+	background: url("images/seabg.jpg") no-repeat;
+	height:500px;
+	background-size:960px 500px;
+	position:relative;
+	overflow:hidden;
+}
+#sun{
+	width:1px;
+	height:1px;
+	position:absolute;
+	top:49%;
+	left:48%;
+	background: #FEF66D;
+	border-radius:20px;
+	border:1px solid #fff;
+}
+#cloud1{
+	position:absolute;
+	top:15px;
+	left:-12%;
+}
+#cloud2{
+	position:absolute;
+	top:40px;
+	left:-12%;
+}
+#cloud3{
+	position:absolute;
+	top:75px;
+	left:-12%;
+}
+.boats{
+    color: #24421A;
+    font-family: Comic Sans MS;
+    font-size: 58px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+    background: url("images/boat.png") no-repeat;
+    position: absolute;
+    top: 38%;
+
+}
+#boat-h1{
+	left:-96%;
+}
+#boat-a1{
+	left:-88%;
+}
+#boat-p1{
+	left:-80%;
+}
+#boat-p2{
+	left:-72%;
+}
+#boat-y1{
+	left:-64%;
+}
+#boat-n1{
+	left:-56%;
+}
+#boat-e1{
+	left:-48%;
+}
+#boat-w1{
+	left:-40%;
+}
+#boat-y2{
+	left:-32%;
+}
+#boat-e2{
+	left:-24%;
+}
+#boat-a2{
+	left:-16%;
+}
+#boat-r1{
+	left:-8%;
+}
+
+.yeardigit{
+    font-family: Comic Sans MS;
+    font-size: 0px;
+    font-weight:bold;
+    left: 61%;
+    bottom: 8%;
+    position: absolute;
+    color:#400000;
+}

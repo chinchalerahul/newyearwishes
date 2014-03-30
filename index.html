@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="jquery-1.10.2.min.js"></script>
+</head>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	setInterval("startAnimation()", 500);
+});
+function startAnimation(){
+	$("#sun").animate({top: '1%', width:'40px', height:'40px'}, 55000);
+
+	$("#cloud1").animate({left : '100%'}, 70000).animate({left : '-12%'}, 0);
+	$("#cloud2").animate({left : '100%'}, 80000).animate({left : '-12%'}, 0);
+	$("#cloud3").animate({left : '100%'}, 100000).animate({left : '-12%'}, 0);
+
+
+	$("#boat-r1").animate({left : '100%'}, 120000).animate({left : '-8%'}, 121100);
+	$("#boat-a2").animate({left : '100%'}, 120100).animate({left : '-16%'}, 121000);
+	$("#boat-e2").animate({left : '100%'}, 120200).animate({left : '-24%'}, 120900);
+	$("#boat-y2").animate({left : '100%'}, 120300).animate({left : '-32%'}, 120800);
+	$("#boat-w1").animate({left : '100%'}, 120400).animate({left : '-40%'}, 120700);
+	$("#boat-e1").animate({left : '100%'}, 120500).animate({left : '-48%'}, 120600);
+	$("#boat-n1").animate({left : '100%'}, 120600).animate({left : '-56%'}, 120500);
+	$("#boat-y1").animate({left : '100%'}, 120700).animate({left : '-64%'}, 120400);
+	$("#boat-p2").animate({left : '100%'}, 120800).animate({left : '-72%'}, 120300);
+	$("#boat-p1").animate({left : '100%'}, 120900).animate({left : '-80%'}, 120200);
+	$("#boat-a1").animate({left : '100%'}, 121000).animate({left : '-88%'}, 120100);
+	$("#boat-h1").animate({left : '100%'}, 121100).animate({left : '-96%'}, 120000);
+
+	setInterval("digitAnimate()", 60000);
+
+}
+function digitAnimate(){
+	$("#digit1").animate({left : '40%', bottom: '10%', "font-size": "50pt"}, 500, "swing").toggle( "explode" );
+	$("#digit2").animate({left : '44%', bottom: '10%', "font-size": "50pt"}, 1000, "swing").toggle( "explode" );
+	$("#digit3").animate({left : '47.5%', bottom: '10%', "font-size": "50pt"}, 1500, "swing").toggle( "explode" );
+	$("#digit4").animate({left : '50.5%', bottom: '10%', "font-size": "50pt"}, 2000, "swing").toggle( "explode" );
+}
+
+</script>
+<body>
+	<div id="page">
+		<div id="sun"></div>
+		<div id="cloud1"><img src="images/cloud1.png"/></div>
+		<div id="cloud2"><img src="images/cloud2.png"/></div>
+		<div id="cloud3"><img src="images/cloud3.png"/></div>
+
+		<div id="boat-r1" class="boats">R</div>
+		<div id="boat-a2" class="boats">A</div>
+		<div id="boat-e2" class="boats">E</div>
+		<div id="boat-y2" class="boats">Y</div>
+		<div id="boat-w1" class="boats">W</div>
+		<div id="boat-e1" class="boats">E</div>
+		<div id="boat-n1" class="boats">N</div>
+		<div id="boat-y1" class="boats">Y</div>
+		<div id="boat-p2" class="boats">P</div>
+		<div id="boat-p1" class="boats">P</div>
+		<div id="boat-a1" class="boats">A</div>
+		<div id="boat-h1" class="boats">H</div>
+
+		<div id="digit1" class="yeardigit">2</div>
+		<div id="digit2" class="yeardigit">0</div>
+		<div id="digit3" class="yeardigit">1</div>
+		<div id="digit4" class="yeardigit">4</div>
+
+	</div>
+</body>
+</html>
